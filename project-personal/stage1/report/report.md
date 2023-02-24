@@ -1,8 +1,8 @@
 ---
 ## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+title: "Отчет о выполнении первого этапа индивидуального проекта"
+subtitle: "Дисциплина: операционные системы"
+author: "Лобанова Полина Иннокентьевна"
 
 ## Generic otions
 lang: ru-RU
@@ -66,54 +66,100 @@ header-includes:
   - \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
-# Цель работы
+# Выполнение первого этапа
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
+1. Скачаем исполняемый файл hugo.
 
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+![*Скачивание hugo.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/1.png){ #fig:001 width=70% }
 
-# Задание
+2. Разархивируем его и перенесем в каталог bin.
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+![*Файл hugo в каталоге bin.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/2.png){ #fig:002 width=70% }
 
-# Теоретическое введение
+3. Перейдем на github и создадим новый репозиторий с названием "ippi", используя данный шаблон.
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+![*Репозиторий, используемый, как шаблон.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/3.png){ #fig:003 width=70% }
 
-Например, в табл. @tbl:std-dir приведено краткое описание стандартных каталогов Unix.
+![*Создание моего репозитория.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/4.png){ #fig:004 width=70% }
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
+4. Перейдя в терминал, скопируем репозиторий в каталог work.
 
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
+![*Клонирование репозитория.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/5.png){ #fig:005 width=70% }
 
-Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
+5. Далее введем команду "~/bin/hugo".
 
-# Выполнение лабораторной работы
+![*Команда "~/bin/hugo".*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/6.png){ #fig:006 width=70% }
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. @fig:001).
+6. У нас появились необходимые файлы, но нам нужно удалить один файл "public".
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+![*Удаление файла public.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/7.png){ #fig:007 width=70% }
 
-# Выводы
+7. Далее введем команду "~/bin/hugo server".
 
-Здесь кратко описываются итоги проделанной работы.
+![*Команда "~/bin/hugo server".*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/8.png){ #fig:008 width=70% }
 
-# Список литературы{.unnumbered}
+8. На экране появится адрес ссылки, по которой нам нужно перейти. Тогда мы увидим наш сайт.
 
-::: {#refs}
-:::
+![*Сайт.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/9.png){ #fig:009 width=70% }
+
+9. На сайте есть область синего цвета. Для того, чтобы ее удалить нам необходимо отредактировать файл ~/work/ippi/content/_index.md.
+
+![*Исходный текст файла.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/10.png){ #fig:010 width=70% }
+
+![*Отредактированный текст файла.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/11.png){ #fig:011 width=70% }
+
+10. Далее создадим новый репозиторий с названием "pilobanova.github.io".
+
+![*Создание нового репозитория.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/12.png){ #fig:012 width=70% }
+
+11. Клонируем новый репозиторий в каталог work (рядом с ippi).
+
+![*Клонирование репозитория.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/13.png){ #fig:013 width=70% }
+
+12. Переходим в новый каталог и вводим команду для создания ветки.
+
+![*Создание ветки.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/14.png){ #fig:014 width=70% }
+
+13. Создаем пустой файл.
+
+![*Создание файла.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/15.png){ #fig:015 width=70% }
+
+14. Загружаем все это на github.
+
+![*Загрузка на github.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/16.png){ #fig:016 width=70% }
+
+15. Далее создаем каталог ~/work/ippi/public и привязываем к нему наш новый репозиторий.
+
+![*Каталог public.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/17.png){ #fig:017 width=70% }
+
+16. Нам выдаем ошибку и для того, чтобы ее исправить нам нужно отредактировать файл ".gitignore".
+
+![*Исходный текст файла.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/18.png){ #fig:018 width=70% }
+
+![*Отредактированный текст файла.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/19.png){ #fig:019 width=70% }
+
+17. Далее нужно повторить команду, указанную в пункте 15.
+
+![*Привязываение репозитория.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/20.png){ #fig:020 width=70% }
+
+18. Введем команду "~/bin/hugo". У нас появятся необходимые файлы теперь в каталоге public.
+
+![*Создание необходимых файлов.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/21.png){ #fig:021 width=70% }
+
+19. Загрузим все новые файлы на github.
+
+![*Загрузка на github.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/22.png){ #fig:022 width=70% }
+
+![*Загрузка на github.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/23.png){ #fig:023 width=70% }
+
+20. Проверим все ли сделано правильно.
+
+![*Верно отредактированный репозиторий.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/24.png){ #fig:024 width=70% }
+
+21. Проверим открывается ли наш сайт через github.
+
+![*Наш сайт.*](/home/pilobanova/work/study/2022-2023/Операционные системы/os-intro/project-personal/stage1/report/image/ip1/25.png){ #fig:025 width=70% }
+
+# Вывод
+
+Я создала исходный сайт, который в дальнейшем буду редактировать, и сделала так, что его можно просмотреть с разных устройств, используя github.
