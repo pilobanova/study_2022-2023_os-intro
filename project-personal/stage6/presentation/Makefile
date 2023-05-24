@@ -9,7 +9,7 @@ PDF_FORMAT_OPTIONS = -t beamer --slide-level=2
 
 FILTERS += --citeproc
 # FILTERS += -F pandoc-crossref
-PDF_ENGINE += --pdf-engine=/usr/local/texlive/2022/bin/x86_64-linuxlualatex
+PDF_ENGINE += --pdf-engine=/usr/local/texlive/2022/bin/x86_64-linux/lualatex
 PDF_OPTIONS += --number-sections
 
 REVEALJS_THEME = beige
